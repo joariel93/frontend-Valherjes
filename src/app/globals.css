@@ -1,3 +1,6 @@
+@import "primereact/resources/themes/saga-blue/theme.css"; /* Tema */
+@import "primereact/resources/primereact.min.css"; /* Componentes PrimeReact */
+@import "primeicons/primeicons.css"; /* Iconos */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,8 +17,44 @@
   }
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-menubar {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 0 1rem;
+}
+
+.p-menubar .p-button {
+  color: #007ad9;
+}
+
+#logoNav{
+  max-width: 100%;
+  height: revert-layer;
+  min-height: 10vh;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+footer p {
+  margin-right: 10px; /* Espacio entre el texto y los íconos */
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
 }

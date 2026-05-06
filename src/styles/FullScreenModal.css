@@ -1,0 +1,51 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal-backdrop.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .modal-content {
+    position: relative;
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    height: 80%;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .modal-content.slide-in {
+    transform: translateY(0);
+  }
+  
+  .modal-content.slide-out {
+    transform: translateY(100%);
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
