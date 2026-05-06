@@ -16,7 +16,7 @@ const NoticiasCarousel = ({ noticias }) => {
       <img
         alt={noticia.Titulo}
         src={noticia.LinkFoto}
-        className="w-full h-44 object-cover"
+        className="w-full h-44 object-contain bg-gray-100 dark:bg-gray-800"
       />
     );
 

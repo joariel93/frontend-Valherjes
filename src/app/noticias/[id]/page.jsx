@@ -36,7 +36,7 @@ export default function NoticiaPage({ params }) {
 
   return (
     <div className="p-4 mx-auto" style={{ maxWidth: '100%', width: '800px' }}>
-      <Panel className="mb-4 w-full overflow-y-auto overflow-x-hidden">
+      <Panel className="mb-4 w-full">
         <div className="flex flex-col gap-3">
           <h1 className="text-3xl font-bold">{noticia.Titulo}</h1>
           <p className="text-gray-600">{formatDate(noticia.FechaPublicacion)}</p>
