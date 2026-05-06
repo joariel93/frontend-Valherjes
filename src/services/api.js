@@ -1,12 +1,11 @@
 import axios from "axios";
-import { loadConfig } from "../utils/configLoader";
 
 let API = null;
 
 export const getAPIInstance = async () => {
   if (!API) {
-    const config = await loadConfig();
-    API = axios.create({ baseURL: config.baseUrl });
+    const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+    API = axios.create({ baseURL: baseUrl });
   }
   return API;
 };
