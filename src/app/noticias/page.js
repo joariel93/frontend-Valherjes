@@ -31,7 +31,7 @@ export default function NoticiasPage() {
     return (
         <div className="p-4">
             <h1 className="text-3xl font-bold mb-4">Noticias</h1>
-            <div className="grid">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {noticias.map((noticia) => {
                     const header = noticia.LinkFoto ? (
                         <img alt={noticia.Titulo} src={noticia.LinkFoto}
@@ -39,7 +39,7 @@ export default function NoticiasPage() {
                     ) : null;
 
                     return (
-                        <div key={noticia.id} className="col-12 md:col-6 lg:col-4 p-2">
+                        <div key={noticia.id} className="h-full">
                             <Card
                                 title={noticia.Titulo}
                                 subTitle={formatDate(noticia.FechaPublicacion)}

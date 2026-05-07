@@ -1,6 +1,9 @@
-@import "primereact/resources/themes/saga-blue/theme.css"; /* Tema */
-@import "primereact/resources/primereact.min.css"; /* Componentes PrimeReact */
-@import "primeicons/primeicons.css"; /* Iconos */
+@import "primereact/resources/themes/saga-blue/theme.css";
+/* Tema */
+@import "primereact/resources/primereact.min.css";
+/* Componentes PrimeReact */
+@import "primeicons/primeicons.css";
+/* Iconos */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,11 +38,12 @@ body {
   color: #007ad9;
 }
 
-#logoNav{
+#logoNav {
   max-width: 100%;
   height: revert-layer;
   min-height: 10vh;
 }
+
 footer {
   display: flex;
   justify-content: center;
@@ -48,7 +52,8 @@ footer {
 }
 
 footer p {
-  margin-right: 10px; /* Espacio entre el texto y los íconos */
+  margin-right: 10px;
+  /* Espacio entre el texto y los íconos */
 }
 
 .social-icons {
